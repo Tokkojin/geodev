@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Apr  8 20:29:45 2018
-
-@author: ttle
+Hayden Le's GeoDev Technical Assessment Submission
 """
 
 import pandas as pd
@@ -50,6 +48,7 @@ country_info = HoverTool(renderers=[patches])
 country_info.tooltips = [('Country Name', '@name'), ('Population Estimate', '@pop_est{0,0}')]
 p.add_tools(country_info)
 
-output = r"/Users/YOUR_NAME_HERE/Desktop/project_locations.html"
+# --- saves plot to current directory
+output = "./project_locations.html"
 save(p, output)
 
